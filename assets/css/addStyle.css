@@ -1,0 +1,208 @@
+.appie-testimonial-area1 {
+
+    text-align: center;
+
+  }
+
+  .you{
+    width: 80%;
+    margin-left: 20%;
+  }
+  .niu{
+    width: 50%;
+  }
+  .navs{
+    color: #fff;
+    font-size: 25px;
+  }
+  .mission-article2{
+    background: #000000;
+    padding: 5% 7%;
+    border-radius: 10px;
+    background-image: url(../images/grupes/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card .img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+  .wrapper i{
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    font-size: 1.25rem;
+  }
+  .carosel .dragging{
+    scroll-behavior: auto;
+  }
+  .carosel .dragging .card{
+    cursor: grab;
+    user-select: none;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .slide{
+    background: #1f2128;
+  }
+  .card{
+    height: 342px;
+    list-style: none;
+    background: #292E3C;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card h2{
+    color: #fff;
+    margin-top: 5%;
+    font-size: 30px;
+    text-align: center;
+  }
+  .card span{
+    display: none;
+  }
+  .wrapper{
+     position: relative;
+    width: 100%;
+  }
+  .carosel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  /* .mission-article2:hover{
+    background: #000000;
+    padding: 5% 7%;
+    border-radius: 10px;
+    background-image: url(../images/grupes/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } */
+  .mission-article2:hover{
+    box-shadow: -20px 20px 30px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+    z-index: 99;
+  }
+  .misson-title2{
+    font-size: 120px;
+    color: #fff;
+
+  }
+
+  .mission-article2:hover .misson-title2{
+    margin-bottom: 30%;
+    transition: all  1s;
+  }
+  .mission-article2::hover .misson-title2{
+    display: block;
+
+  }
+
+  .hidd{
+    opacity: 0%;
+    transition: 0.9s;
+  }
+  .mission-article2:hover .hidd{
+    opacity: 100%;
+  }
+  .imgses{
+    width: 100%;
+    box-shadow: -20px 20px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2%;
+
+  }
+  .mission-article2 p{
+    font-size: 25px;
+    line-height: 1.5;
+    color: #fff;
+  }
+  @media (max-width: 768px){
+    .carosel {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% / 2) - 12px);
+      gap: 16px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+  }
+    .misson-title2 {
+        font-size: 70px;
+        color: #fff;
+    }
+    .mission-article2 p {
+        font-size: 18px;
+        /* line-height: 1.5; */
+        color: #fff;
+    }
+  }
+
+  @media (max-width: 425px){
+    .carosel {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% / 1) - 12px);
+      gap: 16px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+  }
+    .misson-title2{
+        font-size: 80px;
+        color: #fff;
+      }
+      .misson-title2 {
+        font-size: 60px;
+        color: #fff;
+    }
+    .mission-article2 p {
+        font-size: 12px;
+        /* line-height: 1.5; */
+        color: #fff;
+    }
+    .appie-hero-content {
+        margin-bottom: 130px;
+        text-align: center;
+    }
+    .appie-hero-thumb::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        height: 330px;
+        width: 330px;
+        transform: translate(-50%, -50%);
+        background: #1f2128;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .misson-title {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+
+    
+  }
